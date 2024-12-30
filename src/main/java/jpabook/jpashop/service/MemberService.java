@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 @Service
 @Transactional(readOnly = true)
-@RequiredArgsConstructor
+@RequiredArgsConstructor //final이 있는 필드ㅅ만 생성자를 만들어줌
 public class MemberService {
     private final MemberRepository memberRepository;
     /**
